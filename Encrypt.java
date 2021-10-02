@@ -7,7 +7,7 @@ public static void main(String args[])
 Scanner sc= new Scanner(System.in);
 System.out.println("Enter the word");
 String s = sc.nextLine();
-System.out.println("Enter the key of encryption");
+System.out.println("Enter the key for encryption");
 int ek = sc.nextInt();
 String ss = "",sp = "";
 for(int i=0;i<s.length();i++)
