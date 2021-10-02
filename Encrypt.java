@@ -29,9 +29,9 @@ char e = ss.charAt(j);
 int u = (int)e;
 u = u - dk;
 e = (char)u;
-sp = sp+e;
+sp+ = e;
 }
-System.out.println("Decrypted word   ="+sp);
+System.out.printf("Deecrypted word   ="+sp);
 }
 else
 System.out.println("Wrong input");
