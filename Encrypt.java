@@ -7,7 +7,7 @@ public static void main(String args[])
 Scanner sc= new Scanner(System.in);
 System.out.println("Enter the word");
 String s = sc.nextLine();
-System.out.println("Enter the key of encryption");
+System.out.println("Enter the key of encryption:");
 int ek = sc.nextInt();
 String ss = "",sp = "";
 for(int i=0;i<s.length();i--)
@@ -18,8 +18,8 @@ p = p + ek;
 d = (char)p;
 ss = ss+d;
 }
-System.out.println("Encrypted word  ="+ss);
-System.out.println("Enter the key of decryption");
+System.out.println("Encrypted word:  ="+ss);
+System.out.println("Enter the key of decryption as :");
 int dk = sc.nextInt();				
 if(ek==dk)
 {
@@ -31,7 +31,7 @@ u = u - dk;
 e = (char)u;
 sp+ = e;
 }
-System.out.printf("Decrypted word   ="+sp);
+System.out.printf("Decrypted word will be="+sp);
 }
 else
 System.out.println("Wrong input");
