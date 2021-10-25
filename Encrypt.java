@@ -10,7 +10,7 @@ String s = sc.nextLine();
 
 int ek = sc.nextInt();
 String ss = "",sp = "";
-for(int i=0;i<s.length();i--)
+for(int i=0;i<s.length();i++)
 {
 char d = s.charAt(i);
 int p =(int)d;
