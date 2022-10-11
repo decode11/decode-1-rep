@@ -18,7 +18,7 @@ p = p + ek;
 d = (char)p;
 ss = ss+d;
 }
-System.out.println("encrypted word:  ="+ss);
+System.out.println("Encrypted word:  ="+ss);
 int dk = sc.nextInt();				
 if(ek==dk)
 {
@@ -30,9 +30,9 @@ u = u - dk;
 e = (char)u;
 sp+ = e;
 }
-System.out.printf("decrypted word will be="+sp);
+System.out.printf("Decrypted word will be="+sp);
 }
 else
-System.out.println("wrong input");
+System.out.println("Wrong Input");
 }
 }
