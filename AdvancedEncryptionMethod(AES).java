@@ -15,7 +15,7 @@ class AES {
 	private static final String SECRET_KEY
 		= "my_super_secret_key_ho_ho_ho";
 	
-	private static final String SALT = "ssshhhhhhhhhhh!!!!";
+	private static final String SALT = "ssshhhhhhhhhhhhh!!!!";
 
 	// This method use to encrypt to string
 	public static String encrypt(String strToEncrypt)
@@ -39,11 +39,9 @@ class AES {
 				SECRET_KEY.toCharArray(), SALT.getBytes(),
 				65536, 256);
 			SecretKey tmp = factory.generateSecret(spec);
-			SecretKeySpec secretKey = new SecretKeySpec(
-				tmp.getEncoded(), "AES");
+			SecretKeySpec secretKey = new SecretKeySpec(tmp.getEncoded(), "AES");
 
-			Cipher cipher = Cipher.getInstance(
-				"AES/CBC/PKCS5Padding");
+			Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, secretKey,
 						ivspec);
 			// Return encrypted string
@@ -93,9 +91,9 @@ class AES {
 			return new String(cipher.doFinal(
 				Base64.getDecoder().decode(strToDecrypt)));
 		}
-		catch (Exception e) {
+		catch (Exception exce) {
 			System.out.println("Error while decrypting: "
-							+ e.toString());
+							+ exce.toString());
 		}
 		return null;
 	}
