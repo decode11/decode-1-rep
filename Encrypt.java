@@ -5,7 +5,7 @@ class Encrypt
 public static void main(String args[])
 {
 Scanner sc= new Scanner(System.in);
-System.out.println("Enter the Word");
+System.out.println("enter the word");
 String s = sc.nextLine();
 
 int ek = sc.nextInt();
@@ -30,7 +30,7 @@ u = u - dk;
 e = (char)u;
 sp+ = e;
 }
-System.out.printf("Decrypted Word will be="+sp);
+System.out.printf("decrypted Word will be="+sp);
 }
 else
 System.out.println("Wrong Input");
