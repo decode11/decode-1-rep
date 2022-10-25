@@ -30,9 +30,9 @@ u = u - dk;
 e = (char)u;
 sp+ = e;
 }
-System.out.printf("decrypted Word will be="+sp);
+System.out.printf("Decrypted Word will be="+sp);
 }
 else
-System.out.println("Wrong Input");
+System.out.println("wrong Input");
 }
 }
