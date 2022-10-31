@@ -18,7 +18,7 @@ p = p + ek;
 d = (char)p;
 ss = ss+d;
 }
-System.out.println("Encrypted Word:  ="+ss);
+System.out.println("encrypted Word:  ="+ss);
 int dk = sc.nextInt();				
 if(ek==dk)
 {
